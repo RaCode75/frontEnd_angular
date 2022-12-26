@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-proyectos',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./proyectos.component.scss']
 })
 export class ProyectosComponent implements OnInit {
-
+  @Input() list: number[] = [1,2,3];
   constructor() { }
 
   ngOnInit(): void {
